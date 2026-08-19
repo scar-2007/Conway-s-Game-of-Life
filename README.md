@@ -7,4 +7,4 @@ This is a C++ implementation of Conway's Game of Life using raylib for graphics.
 * Statis : Any live cell with two or three live neighbours lives on to the next generation.
 * Overpopulation : Any live cell with more than three live neighbours dies.
 * Reproduction : Any dead cell with exactly three live neighbours becomes a live cell.
-* 
+  
