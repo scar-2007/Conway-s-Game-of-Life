@@ -15,6 +15,7 @@ class Grid
         int GetColumns() const { return columns; };
 
         void FillRandom();  
+        void Clear();
     private:
         int rows;
         int columns;

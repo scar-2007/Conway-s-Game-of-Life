@@ -3,9 +3,9 @@
 
 int main() 
 {
-  const int window_height = 750;
-  const int window_width = 750;
-  const int cell_size = 25;
+  const int window_height = 1200;
+  const int window_width = 800;
+  const int cell_size = 4;
   int fps = 12;
   Color grey = {29,29,29,255};
 
@@ -40,6 +40,14 @@ int main()
         fps -= 2;
         SetTargetFPS(fps);
       }
+    }
+    else if(IsKeyPressed(KEY_R))
+    {
+      simulation.CreateRandomState();
+    }
+    else if(IsKeyPressed(KEY_C))
+    {
+      simulation.ClearGrid();
     }
     
     //update state
